@@ -77,8 +77,8 @@ jobs:
         git add CHANGELOG.md
         git commit -m "Update CHANGELOG.md for Release ${{ github.event.inputs.version }}"
 
-    - name: Push new release branch
-      run: git push origin ${{ github.event.inputs.release-type }}/${{ github.event.inputs.version }}
+#     - name: Push new release branch
+#       run: git push origin ${{ github.event.inputs.release-type }}/${{ github.event.inputs.version }}
 
     - name: Get latest Changelog entry
       id: changelog-reader
