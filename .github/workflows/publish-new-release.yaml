@@ -52,7 +52,7 @@ jobs:
 
       - name: Publish Release
         id: release-id
-        if: ! env.ACT
+        if: ${{ !env.ACT }}
         uses: softprops/action-gh-release@v0.1.8
         with:
           target_commitish: "master"
