@@ -7,7 +7,12 @@ and this project adheres to [IRNAS's naming guidelines](https://github.com/IRNAS
 
 ## [Unreleased]
 
+
 ## [0.4.4] - 2022-03-02
+
+### Special
+
+- Added something new
 
 ## [0.4.3] - 2022-03-02
 
