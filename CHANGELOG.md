@@ -7,6 +7,12 @@ and this project adheres to [IRNAS's naming guidelines](https://github.com/IRNAS
 
 ## [Unreleased]
 
+## [0.2.0] - 2022-03-02
+
 ### Added
 
 -   Update existing documentation.
+
+[Unreleased]: https://github.com/MarkoSagadin/ci-sandbox/compare/v0.2.0...HEAD
+
+[0.2.0]: https://github.com/MarkoSagadin/ci-sandbox/compare/8a6996779e345e164a818760122915841b1009cd...v0.2.0
