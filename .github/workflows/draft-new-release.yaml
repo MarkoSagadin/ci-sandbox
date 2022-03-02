@@ -71,7 +71,7 @@ jobs:
     # In order to make a commit, we need to initialize a user.
     - name: Commit Changelog
       run: |
-        git checkout -b ${{ github.event.inputs.release-type }}/${{ github.event.inputs.version }}
+        git checkout ${{ github.event.inputs.release-type }}/${{ github.event.inputs.version }}
         git config user.name "github-bot :robot:"
         git config user.email noreply@github.com
         git add CHANGELOG.md
