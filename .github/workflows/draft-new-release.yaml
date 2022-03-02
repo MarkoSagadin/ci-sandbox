@@ -14,7 +14,7 @@ env:
   GIT_TERMINAL_PROMPT: 0
 
 jobs:
-  prepare-release-branch:
+  draft-new-release:
     # runs-on: ubuntu-20.04
     runs-on: self-hosted
     defaults:
