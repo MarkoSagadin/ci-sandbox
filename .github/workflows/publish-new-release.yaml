@@ -10,8 +10,8 @@ on:
 jobs:
   release:
     name: Publish new release
-    # runs-on: ubuntu-20.04
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
+    # runs-on: self-hosted
     defaults:
       run:
         shell: bash -l {0}  # We want to use bash shell all the time, Conda is picky
