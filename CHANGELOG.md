@@ -7,6 +7,9 @@ and this project adheres to [IRNAS's naming guidelines](https://github.com/IRNAS
 
 ## [Unreleased]
 
+
+## [0.4.4] - 2022-03-02
+
 ### Special
 
 - Added something new
@@ -23,7 +26,9 @@ and this project adheres to [IRNAS's naming guidelines](https://github.com/IRNAS
 
 -   Update existing documentation.
 
-[Unreleased]: https://github.com/MarkoSagadin/ci-sandbox/compare/v0.4.3...HEAD
+[Unreleased]: https://github.com/MarkoSagadin/ci-sandbox/compare/v0.4.4...HEAD
+
+[0.4.4]: https://github.com/MarkoSagadin/ci-sandbox/compare/v0.4.3...v0.4.4
 
 [0.4.3]: https://github.com/MarkoSagadin/ci-sandbox/compare/v0.4.2...v0.4.3
 
