@@ -34,7 +34,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          custom_tag: ${{ env.release_version }}
+          custom_tag: ${{ env.release_version_cut }}
 
       # - name: Create new tag
       #   run: |
