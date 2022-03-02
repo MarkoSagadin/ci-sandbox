@@ -16,7 +16,7 @@ jobs:
       run:
         shell: bash -l {0}  # We want to use bash shell all the time, Conda is picky
     # Only merged pull requests can trigger this job
-    if: ${{ env.ACT }} || github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
 
     steps:
       - name: Determine release type and version from branch name
