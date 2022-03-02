@@ -40,9 +40,18 @@ jobs:
           echo "::error::Invalid input release-type: it should be either release or hotfix!"
           exit 1
         fi
+        # Decide from which branch to branch off, depending on release-type
+        if [[ ! ${{ github.event.inputs.release-type }} = "release" ]]; then
+          echo "branch_from=dev" >> $GITHUB_ENV
+        fi
+        if [[ ! ${{ github.event.inputs.release-type }} = "hotfix" ]]; then
+          echo "branch_from=master" >> $GITHUB_ENV
+        fi
 
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        ref: ${{ env.branch_from }}
 
     - name: Create release branch
       uses: peterjgrainger/action-create-branch@v2.0.1
@@ -79,6 +88,7 @@ jobs:
 
     - name: Create Pull Request to master branch
       id: master-pr
+      if: ${{ !env.ACT }}
       uses: repo-sync/pull-request@v2
       with:
         source_branch: "${{ github.event.inputs.release-type }}/${{ github.event.inputs.version }}"
