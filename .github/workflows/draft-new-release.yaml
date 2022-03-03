@@ -42,10 +42,10 @@ jobs:
           exit 1
         fi
         # Decide from which branch to branch off, depending on release-type
-        if [[ ! ${{ github.event.inputs.release-type }} = "release" ]]; then
+        if [[ ${{ github.event.inputs.release-type }} = "release" ]]; then
           echo "branch_from=dev" >> $GITHUB_ENV
         fi
-        if [[ ! ${{ github.event.inputs.release-type }} = "hotfix" ]]; then
+        if [[ ${{ github.event.inputs.release-type }} = "hotfix" ]]; then
           echo "branch_from=master" >> $GITHUB_ENV
         fi
 
